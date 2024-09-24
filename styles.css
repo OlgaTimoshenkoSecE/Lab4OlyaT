@@ -1,3 +1,9 @@
+*{
+    font-family:monospace;
+}
+body{
+    background-color: darkslateblue;
+}
 section{
     display: flex;
     justify-content:space-around;
@@ -8,12 +14,33 @@ article{
     width: 21em;
     height:32em;
     padding: 1em;
+    background-color: rgba(240, 255, 255, 0.894);
 }
 header{
     text-align: center;
-    padding: 1em;
+    padding: 0.3em;
+    color:azure;
+    text-decoration: underline;
+}
+h1{
+    font-size: 3em;
 }
 footer{
     text-align: center;
     padding: 1em;
+    color:azure;
+}
+button{
+    background-color: azure;
+    color:darkslateblue;
+    font-size: 1.2em;
+    width: 7em;
+    height: 3em;
+}
+h3{
+    font-size: 2em;
+    text-align:center;
+}
+ul, dl{
+    font-size: 1.2em;
 }
