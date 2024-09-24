@@ -15,14 +15,26 @@ article{
     height:32em;
     padding: 1em;
     background-color: rgba(240, 255, 255, 0.894);
-    animation-name:bounce;
-    animation-delay:1s;
+}
+article:hover{
+    width: 24em;
+    height:35em;
 }
 header{
     text-align: center;
     padding: 0.3em;
     color:azure;
     text-decoration: underline;
+    animation: slide 15000ms;
+    animation-iteration-count: infinite;
+}
+@keyframes slide{
+    from {
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(100%);
+    }
 }
 h1{
     font-size: 3em;
@@ -38,6 +50,7 @@ button{
     font-size: 1.2em;
     width: 7em;
     height: 3em;
+    animation: col 6000ms;
 }
 h3{
     font-size: 2em;
@@ -58,11 +71,15 @@ table{
     display: flex;
     justify-content: center;
 }
-@keyframes bounce{
-    from {
-        transform: scale(0.2,0.2);
+@keyframes col{
+    from{
+        background-color: darkslateblue;
     }
     to{
-        transform: scale(0,0);
+        background-color:rgba(71, 61, 139, 0);
     }
+}
+button:active{
+    background-color:crimson;
+    color:azure;
 }
